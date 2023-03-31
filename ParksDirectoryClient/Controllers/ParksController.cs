@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using ParksDirectoryClient.Models;
-using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Text.Json.Nodes;

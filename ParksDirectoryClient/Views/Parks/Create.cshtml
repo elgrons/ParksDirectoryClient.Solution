@@ -1,0 +1,28 @@
+@{
+  ViewData["Title"] = "Create Park";
+}
+
+@model ParksDirectoryClient.Models.Park
+
+<h4>Add a new park</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  <br>
+  @Html.LabelFor(model => model.Location)
+  @Html.TextBoxFor(model => model.Location)
+  <br>
+  @Html.LabelFor(model => model.Rating)
+  @Html.TextBoxFor(model => model.Rating)
+  <br>
+  @Html.LabelFor(model => model.Review)
+  @Html.TextBoxFor(model => model.Review)
+  <br>
+  <br>
+  <input type="submit" value="Add new park" class="btn btn-primary"/>
+}
+
+<br>
+<p>@Html.ActionLink("Back to all animals", "Index")</p>
