@@ -1,3 +1,5 @@
+#nullable enable
+
 namespace ParksDirectoryClient.Models;
 
 public class ErrorViewModel
