@@ -31,9 +31,9 @@ A Mvc application that consumes a Parks Directory API. Made for Epicodus Coding 
 
 ## Known Bugs
 
-* 🍴 _PUT method not adding to the database._
+* _PUT method not adding to the database._
 
-* 🍴 _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com)_
+* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com)_
 
 
 ## License

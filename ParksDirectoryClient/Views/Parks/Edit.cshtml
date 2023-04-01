@@ -1,0 +1,29 @@
+@{
+  ViewData["Title"] = $"Edit {Model.Name}";
+}
+
+@model ParksDirectoryClient.Models.Park
+
+<h4>Edit @Model.Name</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.ParkId)
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name, new { @Value = Model.Name})
+  <br>
+  @Html.LabelFor(model => model.Location)
+  @Html.TextBoxFor(model => model.Location, new { @Value = Model.Location})
+  <br>
+  @Html.LabelFor(model => model.Review)
+  @Html.TextBoxFor(model => model.Review, new { Value = Model.Review})
+  <br>
+  @Html.LabelFor(model => model.Rating)
+  @Html.TextBoxFor(model => model.Rating, new { Value = Model.Rating})
+  <br>
+  <br>
+  <input type="submit" value="Edit animal" class="btn btn-primary"/>
+}
+
+<br>
+<p>@Html.ActionLink("Back to details", "Details", new {id = @Model.ParkId})</p>

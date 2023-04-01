@@ -1,5 +1,5 @@
 @{
-ViewData["Title"] = "Destinations";
+ViewData["Title"] = "Parks";
 int pageSize = 6;
 int currentPage = ViewBag.CurrentPage;
 int startIndex = (currentPage - 1) * pageSize;
@@ -18,7 +18,7 @@ List<Park> parks = Model.GetRange(startIndex, endIndex - startIndex);
                 <div class="card-body">
                     <h5 class="card-title">@park.Name</h5>
                     <p class="card-text">@park.Location</p>
-                    <a href="/Destinations/Details/@(park.ParkId)" class="btn btn-primary">Details</a>
+                    <a href="/Parks/Details/@(park.ParkId)" class="btn btn-primary">Details</a>
                 </div>
             </div>
         </div>
